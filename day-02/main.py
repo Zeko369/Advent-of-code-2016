@@ -42,7 +42,7 @@ def get_move(c: str, pos: tuple[int, int], keypad):
 x1 = []
 x2 = []
 
-pos_1 = (len(keypad_part_1[0]) // 2, len(keypad_part_1) // 2)
+pos_1 = (2, 2)
 pos_2 = (3, 1)
 
 for i, line in enumerate(lines):
