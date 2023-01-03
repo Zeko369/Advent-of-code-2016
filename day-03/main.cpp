@@ -23,11 +23,11 @@ int main()
     }
   }
 
-  for (int i = 0; i < triangles.size(); i += 3)
+  for (int row = 0; row < triangles.size(); row += 3)
   {
     for (int col = 0; col < 3; col++)
     {
-      if (is_triangle(triangles[i][col], triangles[i + 1][col], triangles[i + 2][col]))
+      if (is_triangle(triangles[row][col], triangles[row + 1][col], triangles[row + 2][col]))
       {
         x2++;
       }
