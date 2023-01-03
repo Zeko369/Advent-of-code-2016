@@ -19,17 +19,17 @@ int main()
     triangles.push_back({a, b, c});
     if (is_triangle(a, b, c))
     {
-      x1++;
+      ++x1;
     }
   }
 
   for (int row = 0; row < triangles.size(); row += 3)
   {
-    for (int col = 0; col < 3; col++)
+    for (int col = 0; col < 3; ++col)
     {
       if (is_triangle(triangles[row][col], triangles[row + 1][col], triangles[row + 2][col]))
       {
-        x2++;
+        ++x2;
       }
     }
   }
