@@ -16,7 +16,7 @@ int main()
 
   while (std::cin >> a >> b >> c)
   {
-    triangles.push_back({a, b, c});
+    triangles.emplace_back(std::vector<int>{a, b, c});
     if (is_triangle(a, b, c))
     {
       ++x1;
