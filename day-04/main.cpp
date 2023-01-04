@@ -16,7 +16,7 @@ int main() {
         int id = 0;
         int mode = 0;
 
-        for (auto const &chr : row) {
+        for (const char chr : row) {
             if (chr == '-') continue;
             if (chr == ']') break;
             if (chr == '[') {
@@ -26,7 +26,7 @@ int main() {
 
             if (isdigit(chr)) {
                 id *= 10;
-                id += chr - '0';
+                id += atoi(&chr);
             } else if (mode) {
                 checksum += chr;
             } else {
