@@ -19,7 +19,10 @@ int main() {
         for (auto const &chr : row) {
             if (chr == '-') continue;
             if (chr == ']') break;
-            if (chr == '[') mode = 1;
+            if (chr == '[') {
+                mode = 1;
+                continue;
+            }
 
             if (isdigit(chr)) {
                 id *= 10;
