@@ -21,28 +21,20 @@ int main() {
             if (chr == ']') break;
             if (chr == '[') mode = 1;
 
-            switch (chr) {
-                case '-':
-                    continue;
-                case '[':
-                    mode = 1;
-                    continue;
-            }
-
             if (isdigit(chr)) {
                 id *= 10;
                 id += chr - '0';
             } else if (mode) {
                 checksum += chr;
             } else {
-                map[chr]++;
+                ++map[chr];
             }
         }
 
         if (x2 == -1) {
             std::string decrypted = row.substr(0, row.find('['));
-            for (int i = 0; i < id; i++) {
-                for (int j = 0; j < decrypted.size(); j++) {
+            for (int i = 0; i < id; ++i) {
+                for (int j = 0; j < decrypted.size(); ++j) {
                     if (std::isalpha(decrypted[j])) {
                         decrypted[j]++;
                         if (decrypted[j] > 'z') decrypted[j] = 'a';
@@ -62,7 +54,7 @@ int main() {
         });
 
         std::string top5;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; ++i) {
             top5 += vec[i].first;
         }
 
