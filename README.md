@@ -6,7 +6,7 @@
 - [x] day04 - cpp
 - [x] day05 - kotlin
 - [x] day06 - kotlin
-- [ ] day07 - java
+- [x] day07 - java
 - [ ] day08 - java
 - [ ] day09 - php
 - [ ] day10 - php
