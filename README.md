@@ -9,7 +9,7 @@
 - [x] day07 - java
 - [x] day08 - java
 - [x] day09 - php
-- [ ] day10 - php
+- [x] day10 - php
 - [ ] day11 - ruby
 - [ ] day12 - ruby
 - [ ] day13 - rust
